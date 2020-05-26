@@ -1,2 +1,3 @@
 docker-data/
 etc/
+*node_modules/

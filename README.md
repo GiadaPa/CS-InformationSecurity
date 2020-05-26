@@ -74,11 +74,11 @@ Some examples are:
 docker-compose run --rm app /bin/bash -c "npm run start"
 ```
 
-## Joomla
+### Joomla
 
 Joomla can be accessed at [localhost:8080](localhost:8080)
 
-### Configuration details
+#### Configuration details
 
 You will need your database server address, database name, and database user credentials to install Joomla.
 
