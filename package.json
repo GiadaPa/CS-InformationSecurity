@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "run:rce": "python3 RCE/main.py "
-  },
-  "dependencies": {
-    "python3": "^0.0.1"
+    "run:rce": "python3 RCE/main.py",
+    "run:xss": "python3 XSS/xss_attack.py",
+    "run:sqli": "python3 SQLi/sql.py"
   }
 }
