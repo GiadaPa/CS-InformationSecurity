@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "run:rce": "python3 RCE/main.py",
-    "run:xss": "python3 XSS/xss_attack.py",
-    "run:sqli": "python3 SQLi/sql.py"
+    "install-dependencies": "pip3 install google && pip3 install requests",
+    "attack:rce": "python3 RCE/attack.py",
+    "attack:xss": "python3 XSS/xss_attack.py",
+    "attack:sqli": "python3 SQLi/sql.py"
   }
 }

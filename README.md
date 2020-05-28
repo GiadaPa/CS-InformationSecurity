@@ -5,6 +5,7 @@ PenTesting
 
 - [Gettings started](#getting-started)
 - [Docker environment](#docker-environment)
+- [Usage](#usage)
 - [Information](#information)
 
 ## Getting started
@@ -14,7 +15,15 @@ on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-For a ready to use Docker environment with all prerequisites already installed and prepared, you can check out the [Docker environment](#docker-environment) section.
+For a ready to use Docker environment with all Joomla and its dependencies already installed and prepared, you can check out the [Docker environment](#docker-environment) section.
+
+To run the attacks, the following prerequisites must be met:
+
+- Python 3.4+ with pip
+
+A package manager was used to simplify command execution. To use it, the following prerequisites must be met:
+
+- NPM 6 / YARN 1.22
 
 ### Source code
 
@@ -35,6 +44,16 @@ cd InformationSecurity/
 ```
 
 ### Dependencies
+
+Using the package manager, run the following command:
+
+```bash
+yarn install-dependencies
+```
+or alternatively:
+```bash
+npm run install-dependencies
+```
 
 ## Docker environment
 
@@ -87,6 +106,54 @@ You will need your database server address, database name, and database user cre
 - Username: root
 - Password: password
 - Database name: joomladb
+
+## Usage
+
+The following section describes how to perform attacks through the package manager.
+
+### Remote Code Execution
+
+Run the following command:
+
+```bash
+yarn attack:rce VICTIM_URL
+```
+or alternatively:
+```bash
+npm run attack:rce VICTIM_URL
+```
+
+**VICTIM_URL** need to be specified with the relative protocol
+
+If you are using the docker environment: 
+
+```bash
+yarn attack:rce http://localhost:8080/
+```
+
+### SQL injection
+
+Run the following command:
+
+```bash
+yarn attack:sqli
+```
+or alternatively:
+```bash
+npm run attack:sqli
+```
+
+### XSS
+
+Run the following command:
+
+```bash
+yarn attack:xss
+```
+or alternatively:
+```bash
+npm run attack:xss
+```
 
 ## Information
 
