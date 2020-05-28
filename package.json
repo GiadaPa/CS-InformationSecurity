@@ -1,4 +1,10 @@
 {
+  "name": "pentesting",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "run:rce": "python3 RCE/main.py "
+  },
   "dependencies": {
     "python3": "^0.0.1"
   }
