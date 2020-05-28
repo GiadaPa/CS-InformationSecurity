@@ -1,7 +1,0 @@
-{
-    "dependencies": {
-      "esm": "*"
-    },
-    "private": true,
-    "type": "module"
-  }
