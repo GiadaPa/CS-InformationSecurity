@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "install-dependencies": "pip3 install google && pip3 install requests",
-    "attack:rce": "python3 RCE/attack.py",
-    "attack:xss": "python3 XSS/xss_attack.py",
-    "attack:sqli": "python3 SQLi/sql.py"
+    "attack:rce": "python RCE/attack.py",
+    "attack:xss": "python XSS/xss_attack.py",
+    "attack:sqli": "python SQLi/sql.py"
   }
 }
